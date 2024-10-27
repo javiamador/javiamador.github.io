@@ -1,0 +1,28 @@
+/* Light theme */
+body {
+    background-color: #fffff8;
+    color: #111;
+}
+
+article {
+    background-color: #fffff8;
+    color: #111;
+}
+
+a:link, a:visited {
+    color: #111;
+}
+
+.marginnote, .sidenote {
+    color: #111;
+}
+
+blockquote {
+    background-color: #f5f5f5;
+    border-left: 3px solid #111;
+}
+
+code {
+    background-color: #f5f5f5;
+    color: #111;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "javi_tufte",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
