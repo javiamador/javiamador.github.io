@@ -10,7 +10,7 @@ My name is John Amador, but I mainly go by Javi.<label for="sn-demo" class="marg
 <div class="sidenote-container">
     <input type="checkbox" id="sn-demo" class="margin-toggle"/>
     <span class="sidenote">
-        Pronounced as "Ha-vi," sort of like Javier but shorter. Just a nickname I had since I was a kid, but everyone calls me that instead of John. || [ˈxabi] You can use [this IPA reader](http://ipa-reader.xyz) to hear how it's pronounced if ever too!
+        Pronounced as "Ha-vi," sort of like Javier but shorter. Just a nickname I had since I was a kid, but everyone calls me that instead of John. || [ˈxabi] You can use http://ipa-reader.xyz to hear how it's pronounced if ever too!
     </span>
 </div>
 
