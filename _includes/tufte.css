@@ -449,3 +449,87 @@ label.margin-toggle:not(.sidenote-number) {
         width: 100%;
     }
 }
+/* Restrict content width and keep sidebar for sidenotes */
+.container {
+    max-width: 800px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Main content area */
+.main-content {
+    flex: 3; /* Adjusted for more flexible growth */
+}
+
+/* Sidebar for superscripts only */
+.sidebar {
+    flex: 1;
+    padding-left: 10px;
+}
+
+/* Adjust sidenote display */
+.sidenote-container {
+    display: flex;            /* Use flexbox for layout */
+    align-items: flex-start; /* Align items to the top */
+    margin-top: 0;          /* Adjust as needed for spacing */
+}
+
+/* Improved sidenote and marginnote styling */
+.sidenote,
+.marginnote {
+    display: inline-block;   /* Use inline-block for normal flow */
+    width: auto;             /* Auto width to fit content */
+    margin-left: 5px;       /* Space between the sidenote number and text */
+    color: DodgerBlue;       /* Apply Dodger Blue color to the sidenotes */
+}
+
+/* Sidenote number styles */
+.sidenote-number {
+    counter-increment: sidenote-counter;
+    color: DodgerBlue;       /* Ensure the sidenote number is in Dodger Blue */
+}
+
+.sidenote-number:after,
+.sidenote:before {
+    font-family: et-book-roman-old-style;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.sidenote-number:after {
+    content: counter(sidenote-counter);
+    font-size: 1rem;
+    top: -0.5rem; /* Adjust this for vertical alignment */
+    left: 0.1rem; /* Adjust as needed */
+}
+
+.sidenote:before {
+    content: counter(sidenote-counter) " ";
+    font-size: 1rem;
+    top: -0.5rem; /* Adjust this for vertical alignment */
+}
+
+/* Ensure no margin collapsing occurs */
+p {
+    margin-top: 1.4rem; /* Adjust if necessary */
+    margin-bottom: 1.4rem;
+    padding-right: 0;
+    vertical-align: baseline;
+}
+
+/* Optional: Adjust the margin of the main paragraph to ensure alignment with the sidenote */
+p.sidenote-container {
+    margin-bottom: 0; /* Adjust to ensure the paragraph aligns with the sidenote */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 760px) {
+    .container {
+        flex-direction: column; /* Stack on smaller screens */
+    }
+
+    .sidebar {
+        order: -1; /* Ensure the sidebar stays above the main content */
+        padding-left: 0; /* Adjust padding for better spacing */
+    }
+}
