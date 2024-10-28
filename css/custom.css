@@ -26,3 +26,9 @@ code {
     background-color: #f5f5f5;
     color: #111;
 }
+/* Apply Dodger Blue to superscript numbers in the main content */
+.main-content .sidenote-number, /* Target superscript in main content */
+.sidebar .sidenote-number {     /* Target superscript in sidebar */
+    color: dodgerblue;
+    font-weight: bold;
+}
