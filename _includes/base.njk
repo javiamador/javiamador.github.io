@@ -13,7 +13,20 @@
             <a href="/">Home</a> |
             <a href="/blog">Blog</a>
         </nav>
-        {{ content | safe }}
+        
+        <div class="container">
+            <div class="main-content">
+                {{ content | safe }}
+            </div>
+            <div class="sidebar">
+                <!-- This is where sidenotes/superscript notes will be displayed -->
+                {% if sidenotes %}
+                    {% for note in sidenotes %}
+                        <p><sup class="sidenote-number">{{ note.number }}</sup> {{ note.text }}</p>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
     </article>
 </body>
 </html>
