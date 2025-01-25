@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: Where I Stand: A Look Back at a Year of Recovery
+title: Where I Stand | A Look Back at a Year of Recovery
 date: 2025-01-25
 ---
 
